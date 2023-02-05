@@ -1,0 +1,16 @@
+:root {
+    --black-color: #282c34;
+    --limegreen-color: #c9e265;
+    --green-color: #628956;
+    --red-color: #741a1f;
+    --white-color: #ffffff;
+}
+
+/* Path: Medusa\src\style\index.css */
+
+body {
+    background-color: var(--black-color);
+    color: var(--white-color);
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
