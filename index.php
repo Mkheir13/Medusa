@@ -18,8 +18,8 @@
 <body>
 
 <?php require_once 'src/components/sidebar.html'; ?>
-<?php require_once 'src/components/conection.html'; ?>
-<?php //require_once 'src/components/grotte.html'; ?>
+<?php //require_once 'src/components/conection.html'; ?>
+<?php require_once 'src/components/grotte.html'; ?>
 <?php require_once 'src/components/footer.html'; ?>
 
 </body>
