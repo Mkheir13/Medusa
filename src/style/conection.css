@@ -13,7 +13,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: Verdana;
-  background: linear-gradient(#c9e265, #282c34);
+  background: linear-gradient(var(--limegreen-color), var(--black-color));
 }
 
 .caixa__login {

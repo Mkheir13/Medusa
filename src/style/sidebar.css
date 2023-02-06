@@ -1,9 +1,18 @@
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .sidebar_logo {
     height: 5.75em;
     display: flex;
+    width: fit-content;
     justify-content: center;
     align-items: center;
     margin-top: 2em;
+    background: var(--black-color);
+    border-radius: 50%;
 }
 
 .sidebar_logo img {

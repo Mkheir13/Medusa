@@ -8,12 +8,14 @@
     <link rel="stylesheet" href="src/style/index.css">
     <link rel="stylesheet" href="src/style/sidebar.css">
     <link rel="stylesheet" href="src/style/footer.css">
+    <link rel="stylesheet" href="src/style/conection.css">
     <title>MEDUSA</title>
     <link rel="icon" type="image/png" href="src/img/medusa.png" />
 </head>
 <body>
 
 <?php require_once 'src/components/sidebar.html'; ?>
+<?php require_once 'src/components/conection.html'; ?>
 <?php require_once 'src/components/footer.html'; ?>
 
 </body>
