@@ -1,0 +1,11 @@
+.sidebar_logo {
+    height: 5.75em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+}
+
+.sidebar_logo img {
+    height: 5.75em;
+}

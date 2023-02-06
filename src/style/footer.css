@@ -20,6 +20,10 @@
     align-items: center;
 }
 
+.logo img {
+    height: 5.75em;
+}
+
 .container {
     display: flex;
     justify-content: center;
@@ -59,10 +63,4 @@ a:hover {
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-evenly;
-}
-
-img {
-    height: 2.5em;
-    width: 2.5em;
-    margin: 0.5em;
 }
