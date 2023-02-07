@@ -1,0 +1,208 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body
+{
+    min-height: 10vh;
+    background: linear-gradient(var(--limegreen-color), var(--black-color));
+}
+.text-deco
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h2
+{
+    position: relative;
+    font-size: 1.5em;
+    color: #222
+}
+h2::before
+{
+    content: attr(data-text);
+    position: absolute;
+    color: #35D020;
+    width: 160px;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 1px solid #35D020;
+    animation: animate1 8s linear infinite;
+    filter: drop-shadow(0 0 20px #35D020) drop-shadow(0 0 50px #35D020);
+}
+@keyframes animate1
+{
+    0%,10%,100%
+    {
+        width: 0;
+    }
+    70%,90%
+    {
+        width: 100%;
+    }
+}
+
+/*---------------------------Infini------------------------------*/
+
+
+section
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 70vh;
+    background: linear-gradient(var(--limegreen-color), var(--black-color));
+}
+
+section .container
+{
+    display: flex;
+}
+section .container .circle
+{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin: 0 -7.5px;
+}
+section .container .circle span
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: rotate(calc(18deg * var(--i)));
+}
+section .container .circle span::before
+{
+    content: '';
+    position: absolute;
+    right: 0;
+    top: calc(50% - 7.5px);
+    width: 15px;
+    height: 15px;
+    background: #35D020;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #35D020, 0 0 20px #35D020, 0 0 40px #35D020,0 0 60px #35D020,0 0 80px #35D020,0 0 100px #fff;
+    transform: scale(0.1);
+    animation: animate 4s linear infinite;
+    animation-delay: calc(0.1s * var(--i));
+}
+@keyframes animate
+{
+    0%
+    {
+        transform: scale(1);
+    }
+    50%,100%
+    {
+        transform: scale(0.1);
+
+    }
+}
+section .container .circle:nth-child(2)
+{
+    transform: rotate(-180deg);
+}
+section .container .circle:nth-child(2) span::before
+{
+    animation-delay: calc(-0.1s * var(--i));
+}
+
+
+/*---------------------------Bouton------------------------------*/
+
+.b-bouton
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a
+{
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #35D020;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 24px;
+    overflow: hidden;
+    transition: 0.2s;
+}
+a:hover
+{
+    color: #111;
+    background: #35D020;
+    box-shadow: 0 0 10px #35D020,
+    0 0 40px #35D020,
+    0 0 80px #35D020;
+    transition-delay: 1s;
+}
+a span
+{
+    position: absolute;
+    display: block;
+}
+a span:nth-child(1)
+{
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #35D020);
+}
+a:hover span:nth-child(1)
+{
+    left: 100%;
+    transition: 1s;
+}
+a span:nth-child(3)
+{
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #35D020);
+}
+a:hover span:nth-child(3)
+{
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+a span:nth-child(2)
+{
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #35D020);
+}
+a:hover span:nth-child(2)
+{
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+a span:nth-child(4)
+{
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #35D020);
+}
+a:hover span:nth-child(4)
+{
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
