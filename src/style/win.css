@@ -5,11 +5,6 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-body
-{
-    min-height: 10vh;
-    background: linear-gradient(var(--limegreen-color), var(--black-color));
-}
 .text-deco
 {
     display: flex;
@@ -26,13 +21,13 @@ h2::before
 {
     content: attr(data-text);
     position: absolute;
-    color: #35D020;
+    color: var(--green-color);
     width: 160px;
     overflow: hidden;
     white-space: nowrap;
     border-right: 1px solid #35D020;
     animation: animate1 8s linear infinite;
-    filter: drop-shadow(0 0 20px #35D020) drop-shadow(0 0 50px #35D020);
+    filter: drop-shadow(0 0 20px var(--limegreen-color)) drop-shadow(0 0 50px var(--limegreen-color)) drop-shadow(0 0 100px var(--limegreen-color));
 }
 @keyframes animate1
 {
@@ -55,7 +50,6 @@ section
     align-items: center;
     justify-content: center;
     min-height: 70vh;
-    background: linear-gradient(var(--limegreen-color), var(--black-color));
 }
 
 section .container
@@ -112,97 +106,4 @@ section .container .circle:nth-child(2)
 section .container .circle:nth-child(2) span::before
 {
     animation-delay: calc(-0.1s * var(--i));
-}
-
-
-/*---------------------------Bouton------------------------------*/
-
-.b-bouton
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-a
-{
-    position: relative;
-    display: inline-block;
-    padding: 15px 30px;
-    color: #35D020;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    text-decoration: none;
-    font-size: 24px;
-    overflow: hidden;
-    transition: 0.2s;
-}
-a:hover
-{
-    color: #111;
-    background: #35D020;
-    box-shadow: 0 0 10px #35D020,
-    0 0 40px #35D020,
-    0 0 80px #35D020;
-    transition-delay: 1s;
-}
-a span
-{
-    position: absolute;
-    display: block;
-}
-a span:nth-child(1)
-{
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(90deg, transparent, #35D020);
-}
-a:hover span:nth-child(1)
-{
-    left: 100%;
-    transition: 1s;
-}
-a span:nth-child(3)
-{
-    bottom: 0;
-    right: -100%;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(270deg, transparent, #35D020);
-}
-a:hover span:nth-child(3)
-{
-    right: 100%;
-    transition: 1s;
-    transition-delay: 0.5s;
-}
-a span:nth-child(2)
-{
-    top: -100%;
-    right: 0;
-    width: 2px;
-    height: 100%;
-    background: linear-gradient(180deg, transparent, #35D020);
-}
-a:hover span:nth-child(2)
-{
-    top: 100%;
-    transition: 1s;
-    transition-delay: 0.25s;
-}
-a span:nth-child(4)
-{
-    bottom: -100%;
-    left: 0;
-    width: 2px;
-    height: 100%;
-    background: linear-gradient(360deg, transparent, #35D020);
-}
-a:hover span:nth-child(4)
-{
-    bottom: 100%;
-    transition: 1s;
-    transition-delay: 0.75s;
 }
