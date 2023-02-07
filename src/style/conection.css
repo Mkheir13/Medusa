@@ -175,3 +175,10 @@ body {
     bottom: 100%;
   }
 }
+
+.test input {
+  width: 150px;
+  border: none;
+  outline: none;
+  background: transparent;
+}
