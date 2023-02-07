@@ -6,20 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>login</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../style/conection.css">
 </head>
 
 <body>
     <div class="caixa__login">
-        <h2>Connection</h2>
+        <h2>connexion</h2>
         <form>
             <div class="caixa__login-input">
-                <input type="text" required />
-                <label>User</label>
+                <input type="text" id="username" name="username" required />
+                <label for="username">User</label>
             </div>
             <div class="caixa__login-input">
-                <input type="password" required />
-                <label>password</label>
+                <input type="password" id="password" name="password" required/>
+                <label for="password">password</label>
             </div>
             <a href="/conection.html">
                 <span></span>
@@ -28,10 +28,12 @@
                 <span></span>
                 continue
             </a>
+            <div class="test">
+                <input type="submit" value=" ">
+            </div>
         </form>
     </div>
-    <a class="bnt-cher" href=""></a>
 </body>
 
-<script src="main.js"></script>
+<script src="/src/scripts/conection.js"></script>
 </html>
