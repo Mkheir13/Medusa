@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="src/style/sidebar.css">
     <link rel="stylesheet" href="src/style/footer.css">
     <link rel="stylesheet" href="src/style/conection.css">
-    <link rel="stylesheet" href="src/style/pop-up.css">
     <link rel="stylesheet" href="src/style/grotte.css">
     <script defer src="src/scripts/grotte.js"></script>
     <title>MEDUSA</title>
