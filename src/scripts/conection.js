@@ -7,9 +7,4 @@ function validateForm() {
     conssct.addEventListener('click', () => {
         window.location.href = "http://medusa48h.alwaysdata.net/grotte.php";
     });
-
-    } else {
-      alert("Nom d'utilisateur ou mot de passe incorrect");
-      return false;
-    }
   }
